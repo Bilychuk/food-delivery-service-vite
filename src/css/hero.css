@@ -9,17 +9,13 @@
   justify-content: flex-start;
   align-items: flex-start;
 }
-.hero-title {
-  font-weight: 700;
-  font-size: 28px;
-}
 .hero-text {
   font-size: 14px;
   line-height: 1.5;
 }
 .hero-order-btn {
   display: block;
-  width: 98px;
+  min-width: 98px;
   height: 32px;
   padding: 6px 18px;
   border-radius: 30px;
@@ -50,7 +46,6 @@
     display: block;
   }
   .hero-title {
-    font-size: 42px;
     line-height: 1.2;
     max-width: 537px;
     margin-bottom: 44px;
@@ -73,6 +68,11 @@
   .swiper {
     width: 320px;
     height: 320px;
+  }
+
+  .swiper-wrapper .second-img,
+  .swiper-wrapper .third-img {
+    display: none;
   }
 
   .hero-right-part .swiper-button-prev,
@@ -111,8 +111,8 @@
     width: 560px;
     height: 560px;
   }
-  .second-img,
-  .third-img {
+  .swiper-wrapper .second-img,
+  .swiper-wrapper .third-img {
     display: block;
   }
 

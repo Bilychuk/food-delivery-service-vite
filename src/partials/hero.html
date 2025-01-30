@@ -1,7 +1,7 @@
 <section class="hero-container">
   <div class="container hero-wrapper">
     <div class="hero-left-part">
-      <h1 class="hero-title">Enjoy Your Favorite Food From Anywhere</h1>
+      <h1 class="hero-title">enjoy your favorite food from anywhere</h1>
       <p class="hero-text">
         Savor every bite with fresh, delicious meals delivered right to your
         door. From comforting classics to bold flavors, enjoy great food
@@ -15,17 +15,32 @@
         <div class="swiper-wrapper">
           <img
             class="swiper-slide first-img"
+            srcset="
+              ./img/hero-first-tablet.png      292w,
+              ./img/hero-first-desktop.png     512w,
+              ./img/hero-first-tablet@2x.png   584w,
+              ./img/hero-first-desktop@2x.png 1024w
+            "
+            sizes="(min-width: 1280px) 512px, (min-width: 768px) 292px"
             src="./img/hero-first-desktop.png"
             alt="dish"
           />
           <img
             class="swiper-slide second-img"
+            srcset="
+              ./img/hero-second-desktop.png    1x,
+              ./img/hero-second-desktop@2x.png 2x
+            "
             src="./img/hero-second-desktop.png"
             alt="dish"
           />
           <img
             class="swiper-slide third-img"
-            src="./img/hero-third-desktop.png"
+            srcset="
+              ./img/hero-third-desktop.png    1x,
+              ./img/hero-third-desktop@2x.png 2x
+            "
+            src="./img/hero-second-desktop.png"
             alt="dish"
           />
         </div>

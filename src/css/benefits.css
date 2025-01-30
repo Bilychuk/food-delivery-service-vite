@@ -1,0 +1,124 @@
+.benefits-section {
+  background-color: #ffe550;
+}
+.benefits-wrapper {
+  padding-top: 371px;
+  padding-bottom: 89px;
+  background-image: url(/img/benefits-apple-mobile.png);
+  background-size: 280px 280px;
+  background-repeat: no-repeat;
+  background-position: top 31px center;
+}
+@media screen and (min-resolution: 192dpi) and (min-width: 320px),
+  screen and (min-resolution: 2dppx) and (min-width: 320px),
+  screen and (min-device-pixel-ratio: 2) and (min-width: 320px) {
+  .benefits-wrapper {
+    background-image: url(/img/benefits-apple-mobile@2x.png);
+  }
+}
+.benefits-title {
+  margin-bottom: 27px;
+}
+.benefits-text {
+  width: 272px;
+  font-size: 14px;
+  margin-bottom: 28px;
+}
+.benefits-list {
+  display: flex;
+  flex-direction: column;
+  row-gap: 28px;
+  margin-bottom: 20px;
+}
+.benefits-icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  background-color: #fff;
+  padding-left: 8px;
+  padding-right: 8px;
+  margin-bottom: 8px;
+}
+.benefits-item-title {
+  font-weight: 700;
+  font-size: 18px;
+  margin-bottom: 16px;
+}
+
+.benefits-item-text {
+  font-size: 14px;
+  width: 252px;
+}
+.benefits-btn {
+  min-width: 106px;
+  height: 40px;
+  padding: 10px 22px;
+  border-radius: 30px;
+  border: solid 2px #7eb101;
+  background-color: #fff;
+  font-weight: 500;
+  font-size: 13px;
+  line-height: 1.5;
+  transition: background-color 200ms linear;
+}
+.benefits-btn:hover,
+.benefits-btn:focus {
+  background-color: #bbf330;
+}
+@media screen and (min-width: 768px) {
+  .benefits-wrapper {
+    padding-top: 489px;
+    padding-bottom: 60px;
+    background-image: url(/img/benefits-apples-tablet.png);
+    background-size: 704px;
+    background-position: top 60px center;
+  }
+  @media screen and (min-resolution: 192dpi) and (min-width: 768px),
+    screen and (min-resolution: 2dppx) and (min-width: 768px),
+    screen and (min-device-pixel-ratio: 2) and (min-width: 768px) {
+    .benefits-wrapper {
+      background-image: url(/img/benefits-apples-tablet@2x.png);
+    }
+  }
+  .benefits-title {
+    width: 526px;
+    margin-bottom: 20px;
+  }
+  .benefits-text {
+    width: 500px;
+    font-size: 16px;
+    margin-bottom: 40px;
+  }
+  .benefits-list {
+    flex-direction: row;
+    column-gap: 116px;
+    row-gap: 0;
+    margin-bottom: 63px;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .benefits-wrapper {
+    padding-top: 130px;
+    padding-bottom: 130px;
+    background-image: url(/img/benefits-apple-desktop.png);
+    background-size: 550px 550px;
+    background-repeat: no-repeat;
+    background-position: 16px;
+  }
+  @media screen and (min-resolution: 192dpi) and (min-width: 320px),
+    screen and (min-resolution: 2dppx) and (min-width: 320px),
+    screen and (min-device-pixel-ratio: 2) and (min-width: 320px) {
+    .benefits-wrapper {
+      background-image: url(/img/benefits-apple-mobile@2x.png);
+    }
+  }
+  .benefits-right-part {
+    width: 573px;
+    margin-left: auto;
+  }
+  .benefits-list {
+    column-gap: 67px;
+    margin-bottom: 58px;
+  }
+}
