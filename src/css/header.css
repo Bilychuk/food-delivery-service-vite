@@ -32,7 +32,14 @@
   border: none;
   background-color: transparent;
 }
-
+.burger-menu-icon {
+  fill: #7eb101;
+  transition: fill 200ms linear;
+}
+.burger-menu-icon:hover,
+.burger-menu-icon:focus {
+  fill: #ffe550;
+}
 @media screen and (min-width: 768px) {
   .header-nav {
     width: 577px;

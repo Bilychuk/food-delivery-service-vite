@@ -27,8 +27,7 @@
   transition: background-color 200ms linear;
 }
 .hero-order-btn:hover,
-.hero-order-btn:focus,
-.hero-order-btn:active {
+.hero-order-btn:focus {
   background-color: #ffe450;
 }
 .hero-right-part {
