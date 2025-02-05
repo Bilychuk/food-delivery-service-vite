@@ -20,7 +20,7 @@
   margin-bottom: 27px;
 }
 .benefits-text {
-  width: 272px;
+  max-width: 272px;
   font-size: 14px;
   margin-bottom: 28px;
 }
@@ -48,7 +48,7 @@
 
 .benefits-item-text {
   font-size: 14px;
-  width: 252px;
+  max-width: 252px;
 }
 .benefits-btn {
   min-width: 106px;
@@ -60,10 +60,11 @@
   font-weight: 500;
   font-size: 13px;
   line-height: 1.5;
-  transition: background-color 200ms linear;
+  transition: background-color 200ms linear, border 200ms linear;
 }
 .benefits-btn:hover,
 .benefits-btn:focus {
+  border: none;
   background-color: #bbf330;
 }
 @media screen and (min-width: 768px) {
@@ -82,11 +83,11 @@
     }
   }
   .benefits-title {
-    width: 526px;
+    max-width: 526px;
     margin-bottom: 20px;
   }
   .benefits-text {
-    width: 500px;
+    max-width: 500px;
     font-size: 16px;
     margin-bottom: 40px;
   }

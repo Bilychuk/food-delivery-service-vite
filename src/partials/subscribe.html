@@ -1,3 +1,38 @@
-<section>
-  <div></div>
+<section class="subscribe-section" id="contact">
+  <div class="container subscribe-wrapper">
+    <img
+      class="subscribe-img"
+      srcset="
+        ./img/banana-mobile.png      280w,
+        ./img/banana-mobile@2x.png   560w,
+        ./img/banana-desktop.png     546w,
+        ./img/banana-desktop@2x.png 1092w
+      "
+      sizes="(min-width: 1280px) 546px, (max-width: 767px) 280px"
+      src="./img/banana-mobile.png"
+      alt="banana"
+      loading="lazy"
+    />
+    <div class="subscribe-text-part">
+      <h2 class="subscribe-title">Subscribe To Get Special Offers</h2>
+      <p class="subscribe-text">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
+        varius enim in eros elementum tristique.
+      </p>
+      <form class="subscribe-form">
+        <label class="subscribe-form-label">
+          <input
+            class="subscribe-form-item"
+            type="email"
+            name="email"
+            placeholder="Enter your email"
+            pattern="(^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$)"
+            autocomplete="off"
+            required
+          />
+        </label>
+        <button class="subscribe-btn" type="button">Subscribe</button>
+      </form>
+    </div>
+  </div>
 </section>

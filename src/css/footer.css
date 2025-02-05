@@ -1,1 +1,214 @@
-
+.page-footer {
+  padding-top: 60px;
+  padding-bottom: 60px;
+  background-image: url('/img/footer-fruits-mobile.png');
+  background-size: 320px 619px;
+  background-repeat: no-repeat;
+  background-position: top center;
+  box-shadow: 0 -4px 24px 0 rgba(105, 105, 105, 0.1);
+}
+@media screen and (min-resolution: 192dpi) and (max-width: 767px),
+  screen and (min-resolution: 2dppx) and (max-width: 767px),
+  screen and (min-device-pixel-ratio: 2) and (max-width: 767px) {
+  .page-footer {
+    background-image: url('/img/footer-fruits-mobile@2x.png');
+  }
+}
+.footer-top {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  margin-bottom: 60px;
+}
+.footer-nav {
+  display: flex;
+}
+.footer-logo {
+  margin-right: 80px;
+}
+.footer-nav-list {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  font-size: 14px;
+  color: #000;
+}
+.footer-nav-link {
+  display: block;
+}
+.footer-text {
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 1.5;
+  margin-bottom: 12px;
+}
+.footer-form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+}
+.footer-form-label {
+  width: 100%;
+}
+.footer-form-email {
+  max-width: 279px;
+  width: 100%;
+  height: 42px;
+  font-size: 12px;
+  line-height: 1.5;
+  border-radius: 30px;
+  border: solid 0.9px #ffe550;
+  background-color: #fff;
+  outline: transparent;
+  outline-offset: 4px;
+  padding: 12px;
+  transition: border-color 200ms linear;
+}
+.footer-form-email::placeholder {
+  color: #505050;
+}
+.footer-form-email:hover,
+.footer-form-email:focus {
+  border-color: #7eb101;
+}
+.footer-form-btn {
+  min-width: 103px;
+  height: 42px;
+  border: 0.9px solid #7eb101;
+  background-color: #fff;
+  border-radius: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 13px;
+  font-weight: 500;
+  line-height: 1.5;
+  transition: border-color 200ms linear;
+}
+.footer-form-btn:hover,
+.footer-form-btn:focus {
+  border: 2px solid #ffe450;
+}
+.footer-privacy-policy {
+  text-align: center;
+  font-size: 10px;
+}
+.footer-privacy-policy-link {
+  color: #7eb101;
+  transition: color 200ms linear;
+}
+.footer-privacy-policy-link:hover,
+.footer-privacy-policy-link:focus {
+  color: #ffe450;
+}
+.footer-settings {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 40px;
+}
+.footer-settings-link {
+  color: #7eb101;
+  font-size: 10px;
+  transition: color 200ms linear;
+}
+.footer-settings-link:hover,
+.footer-settings-link:focus {
+  color: #ffe450;
+}
+.footer-copyright {
+  font-size: 10px;
+  text-align: center;
+}
+@media screen and (min-width: 768px) {
+  .page-footer {
+    padding-top: 81px;
+    padding-bottom: 100px;
+    background-image: url('/img/footer-fruits-tablet.png');
+    background-size: 768px 506px;
+  }
+  @media screen and (min-resolution: 192dpi) and (min-width: 768px),
+    screen and (min-resolution: 2dppx) and (min-width: 768px),
+    screen and (min-device-pixel-ratio: 2) and (min-width: 768px) {
+    .page-footer {
+      background-image: url('/img/footer-fruits-tablet@2x.png');
+    }
+  }
+  .footer-top {
+    gap: 76px;
+    margin-bottom: 80px;
+  }
+  .footer-nav {
+    flex-direction: row;
+    align-items: center;
+  }
+  .footer-logo {
+    margin-right: 120px;
+  }
+  .footer-nav-list {
+    flex-direction: row;
+    gap: 28px;
+  }
+  .footer-nav-link {
+    padding-top: 17px;
+    padding-bottom: 17px;
+  }
+  .footer-form {
+    max-width: 406px;
+    flex-direction: row;
+    gap: 24px;
+    margin-bottom: 12px;
+  }
+  .footer-privacy-policy {
+    font-size: 12px;
+    text-align: left;
+  }
+  .footer-bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .footer-settings {
+    font-size: 12px;
+    gap: 16px;
+    margin-bottom: 0;
+  }
+  .footer-copyright {
+    font-size: 12px;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .page-footer {
+    padding-top: 100px;
+    background-image: url('/img/footer-fruits-desktop.png');
+    background-size: 1280px 266px;
+    background-position: bottom center;
+  }
+  @media screen and (min-resolution: 192dpi) and (min-width: 1280px),
+    screen and (min-resolution: 2dppx) and (min-width: 1280px),
+    screen and (min-device-pixel-ratio: 2) and (min-width: 1280px) {
+    .page-footer {
+      background-image: url('/img/footer-fruits-desktop@2x.png');
+    }
+  }
+  .footer-top {
+    flex-direction: row;
+    gap: 0;
+    justify-content: space-between;
+  }
+  .footer-logo {
+    margin-right: 148px;
+  }
+  .footer-subscribe {
+    min-width: 395px;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 0;
+  }
+  .footer-form {
+    gap: 13px;
+  }
+}
