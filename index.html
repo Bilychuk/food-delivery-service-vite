@@ -21,7 +21,7 @@
     <script type="module" crossorigin src="/food-delivery-service-vite/index.js"></script>
     <link rel="modulepreload" crossorigin href="/food-delivery-service-vite/assets/vendor-CSFEeOhL.js">
     <link rel="stylesheet" crossorigin href="/food-delivery-service-vite/assets/vendor-Ds_YmOBQ.css">
-    <link rel="stylesheet" crossorigin href="/food-delivery-service-vite/assets/index-CmQRGKdV.css">
+    <link rel="stylesheet" crossorigin href="/food-delivery-service-vite/assets/index-DOMq4Cwy.css">
   </head>
   <body>
     <header class="header-section">
@@ -72,7 +72,9 @@
         door. From comforting classics to bold flavors, enjoy great food
         anytime, anywhere!
       </p>
-      <button class="hero-order-btn" type="button">Order Now</button>
+      <button class="hero-order-btn order-open-btn" type="button">
+        Order Now
+      </button>
     </div>
 
     <div class="hero-right-part">
@@ -149,7 +151,9 @@
           </p>
         </li>
       </ul>
-      <button class="benefits-btn" type="button">Order Now</button>
+      <button class="benefits-btn order-open-btn" type="button">
+        Order Now
+      </button>
     </div>
   </div>
 </section>
@@ -358,18 +362,18 @@
         varius enim in eros elementum tristique.
       </p>
       <form class="subscribe-form">
-        <label class="subscribe-form-label">
-          <input
-            class="subscribe-form-item"
-            type="email"
-            name="email"
-            placeholder="Enter your email"
-            pattern="(^[^\s@]+@[^\s@]+\.[^\s@]+$)"
-            autocomplete="off"
-            required
-          />
-        </label>
-        <button class="subscribe-btn" type="button">Subscribe</button>
+        <!-- <label class="subscribe-form-label"> -->
+        <input
+          class="subscribe-form-item"
+          type="email"
+          name="email"
+          placeholder="Enter your email"
+          pattern="(^[^\s@]+@[^\s@]+\.[^\s@]+$)"
+          autocomplete="off"
+          required
+        />
+        <!-- </label> -->
+        <button class="subscribe-btn" type="submit">Subscribe</button>
       </form>
     </div>
   </div>
@@ -418,7 +422,7 @@
               required
             />
           </label>
-          <button class="footer-form-btn" type="button">Subscribe</button>
+          <button class="footer-form-btn" type="submit">Subscribe</button>
         </form>
         <p class="footer-privacy-policy">
           By subscribing you agree to with our
@@ -443,11 +447,34 @@
   </div>
 </footer>
 
-    <section>
-  <div></div>
+    <section class="mobile-menu">
+  <div class="mobile-menu-wrapper">
+    <button class="mobile-menu-close-btn" type="button">
+      <svg class="mobile-menu-icon" width="24" height="24">
+        <use href="/food-delivery-service-vite/assets/icons-CF8PX_Qf.svg#icon-modal-close"></use>
+      </svg>
+    </button>
+    <ul class="mobile-menu-list">
+      <li class="mobile-menu-list-item">
+        <a class="mobile-menu-link link" href="./index.html">Home</a>
+      </li>
+      <li class="mobile-menu-list-item">
+        <a class="mobile-menu-link link" href="#about">About</a>
+      </li>
+      <li class="mobile-menu-list-item">
+        <a class="mobile-menu-link link" href="#service">Service</a>
+      </li>
+      <li class="mobile-menu-list-item">
+        <a class="mobile-menu-link link" href="#favorites">Menu</a>
+      </li>
+      <li class="mobile-menu-list-item">
+        <a class="mobile-menu-link link" href="#contact">Contact</a>
+      </li>
+    </ul>
+  </div>
 </section>
 
-    <div class="backdrop is-open">
+    <div class="backdrop">
   <div class="container order-modal">
     <button class="order-modal-close-btn" type="button">
       <svg
