@@ -1,3 +1,54 @@
-<section>
-  <div></div>
-</section>
+<div class="backdrop is-open">
+  <div class="container order-modal">
+    <button class="order-modal-close-btn" type="button">
+      <svg
+        class="order-modal-close-icon"
+        width="24"
+        height="24"
+        aria-label="order modal window close button"
+      >
+        <use href="./img/icons.svg#icon-modal-close"></use>
+      </svg>
+    </button>
+    <p class="order-modal-text">order form</p>
+    <form class="order-modal-form">
+      <ul class="order-modal-wrapper">
+        <li class="order-modal-wrapper-item">
+          <label class="order-modal-label" for="user-name">Name</label>
+          <input
+            class="order-modal-field"
+            type="text"
+            placeholder="Your name"
+            id="user-name"
+            required
+          />
+        </li>
+        <li class="order-modal-wrapper-item">
+          <label class="order-modal-label" for="user-phone">Phone number</label>
+          <input
+            class="order-modal-field"
+            type="text"
+            placeholder="+38(0_ _) _ _ _   _ _   _ _"
+            pattern="\+38\(0\d{2}\) \d{3} \d{2} \d{2}"
+            id="user-phone"
+            autocomplete="off"
+            required
+          />
+        </li>
+        <li class="order-modal-wrapper-item">
+          <label class="order-modal-label" for="user-email">Email</label>
+          <input
+            class="order-modal-field"
+            type="email"
+            placeholder="example@gmail.com"
+            id="user-email"
+            pattern="(^[^\s@]+@[^\s@]+\.[^\s@]+$)"
+            autocomplete="off"
+            required
+          />
+        </li>
+      </ul>
+      <button class="order-modal-submit-btn" type="submit">Send</button>
+    </form>
+  </div>
+</div>
